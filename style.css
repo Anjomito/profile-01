@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[id] {
+    scroll-margin-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topbar {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: red;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 9999;
+}
+
+a:hover {
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+#section1 {
+    height: 800px;
+    background: url(img/uXZ-wpc-CkpPsPLYx7AG13IuDj7CBkuM1p438Jf_cfh_eQ18rkiONwP8k23hFaiDCmM9TzSG_FaTpgbMK7iALg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px;
+        max-width: 800;
+        margin: 0 auto;
+
+        .photo img {
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .present {
+            text-align: left;
+            max-width: 700px;
+            color: white;
+        }
+
+        .present h1 {
+            font-size: 80px;
+            color: white;
+            -webkit-text-stroke: 2px red;
+        }
+
+        .present h2 {
+            font-size: 50px;
+            text-shadow: -1px -1px black;
+        }
+
+        .present h4 {
+            font-size: 20px;
+            text-shadow: -1px -1px 0 black;
+        }
+
+        .content {
+            font-size: 30px;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+    }
+}
+
+#section2 {
+    height: 800px;
+    background: url(img/uXZ-wpc-CkpPsPLYx7AG13IuDj7CBkuM1p438Jf_cfh_eQ18rkiONwP8k23hFaiDCmM9TzSG_FaTpgbMK7iALg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px;
+        max-width: 800;
+        margin: 0 auto;
+
+        h1 {
+            color: white;
+            -webkit-text-fill-color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th {
+        font-size: 40px;
+        width: 30%;
+        vertical-align: top;
+        text-align: left;
+        font-weight: bold;
+        color: red;
+        padding: 20px;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+
+    }
+
+    td {
+        width: 70%;
+        vertical-align: top;
+        text-align: left;
+        padding: 20px;
+        border-bottom: 1px solid red;
+        border-top: 1px solid red;
+        color: white;
+        line-height: 1.5;
+        font-size: 20px;
+
+    }
+
+}
+
+#section3 {
+    height: 1000px;
+    background: url(img/uXZ-wpc-CkpPsPLYx7AG13IuDj7CBkuM1p438Jf_cfh_eQ18rkiONwP8k23hFaiDCmM9TzSG_FaTpgbMK7iALg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content-box {
+        width: 40%;
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 10px;
+
+
+    }
+
+    .summary-text {
+        color: white;
+    }
+
+    summary {
+        color: red;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+
+    summary:hover {
+        text-decoration: underline;
+    }
+
+    .full-text {
+        color: white;
+    }
+
+    /* แบ่งซ้าย-ขวาใน section3 */
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    /* กล่อง Timeline */
+    .timeline-box {
+        width: 50%;
+    }
+
+    /* ===== Timeline ===== */
+    .timeline {
+        position: relative;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    /* เส้นแนวตั้ง */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #ccc;
+    }
+
+    /* 1 ช่วงเวลา */
+    .timeline-item {
+        /* display: flex; */
+        margin-bottom: 40px;
+    }
+
+    /* เดือน / ปี */
+    .time {
+        width: 80px;
+        font-weight: bold;
+        color: red;
+    }
+
+    /* กล่องเนื้อหา */
+    .timeline-content {
+        background: #f9f9f9;
+        padding: 12px 16px;
+        border-radius: 6px;
+    }
+
+}
+
+#section4 {
+    height: 1100px;
+    background: url(img/uXZ-wpc-CkpPsPLYx7AG13IuDj7CBkuM1p438Jf_cfh_eQ18rkiONwP8k23hFaiDCmM9TzSG_FaTpgbMK7iALg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .animerank {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        max-width: 98%;
+        margin: 0 auto;
+
+        .animelist {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+
+        .animelist::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #ccc;
+        }
+
+        .animebox {
+            display: flex;
+            margin-bottom: 40px;
+
+            .poster img {
+                height: 300px;
+                width: 250px;
+            }
+
+            .animedata {
+                padding: 10px;
+
+                .animename {
+                    font-size: 40px;
+
+                    font-weight: bold;
+                    color: red;
+
+                }
+
+                summary {
+                    color: red;
+                    cursor: pointer;
+                    margin-top: 6px;
+                }
+
+                summary:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+
+    .data {
+        background: #f9f9f9;
+        padding: 12px 16px;
+        border-radius: 6px;
+    }
+
+
+}
+
+#section5 {
+    height: 1100px;
+    background: url(img/uXZ-wpc-CkpPsPLYx7AG13IuDj7CBkuM1p438Jf_cfh_eQ18rkiONwP8k23hFaiDCmM9TzSG_FaTpgbMK7iALg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .animerank {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        max-width: 98%;
+        margin: 0 auto;
+
+        h2 {color: white;}
+
+        .animelist {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+
+        .animelist::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #ccc;
+        }
+
+        .animebox {
+            display: flex;
+            margin-bottom: 40px;
+
+            .poster img {
+                height: 300px;
+                width: 250px;
+            }
+
+            .animedata {
+                padding: 10px;
+
+                .animename {
+                    font-size: 40px;
+
+                    font-weight: bold;
+                    color: red;
+
+                }
+
+                summary {
+                    color: red;
+                    cursor: pointer;
+                    margin-top: 6px;
+                }
+
+                summary:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+
+    .data {
+        background: #f9f9f9;
+        padding: 12px 16px;
+        border-radius: 6px;
+    }
+
+
+}
